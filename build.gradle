@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'ru.playfair'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+application {
+    mainClass = 'ru.playfair.Main'
+}
+
+jar {
+    archiveBaseName = 'PlayfairCipher-Kokorin'
+    archiveVersion = ''
+    manifest {
+        attributes 'Main-Class': 'ru.playfair.Main'
+    }
+    from sourceSets.main.output
+}
