@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+group = 'ru.playfair'
+version = '2.0'
+repositories { mavenCentral() }
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+application { mainClass = 'ru.playfair.Main' }
+def os = System.getProperty('os.name').toLowerCase()
+def arm = System.getProperty('os.arch').contains('aarch64')
+def fxPlatform = os.contains('win') ? 'win' : (os.contains('mac') ? (arm ? 'mac-aarch64' : 'mac') : 'linux')
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['log4j-*.jar'])
+    implementation fileTree(dir: "libs/javafx/${fxPlatform}", include: ['*.jar'])
+    testImplementation files('libs/junit-platform-console-standalone-1.10.2.jar')
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17
+}
+jar {
+    archiveFileName = 'PlayfairCipher.jar'
+    manifest { attributes 'Main-Class': 'ru.playfair.Main' }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.findAll { it.name.startsWith('log4j-') }
+            .collect { zipTree(it) }
+    }
+    exclude 'META-INF/*.SF', 'META-INF/*.RSA', 'META-INF/*.DSA'
+}
+test { useJUnitPlatform() }
+javadoc {
+    options.encoding = 'UTF-8'
+    options.docEncoding = 'UTF-8'
+    options.charSet = 'UTF-8'
+    options.memberLevel = JavadocMemberLevel.PRIVATE
+    options.addStringOption('Xdoclint:all,-missing', '-quiet')
+}

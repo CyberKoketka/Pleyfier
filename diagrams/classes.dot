@@ -1,0 +1,18 @@
+digraph G { graph [fontname="DejaVu Sans", bgcolor="white", dpi=180]; node [fontname="DejaVu Sans", fontsize=11, shape=box]; edge [fontname="DejaVu Sans", fontsize=10];
+
+rankdir=TB; node [shape=record];
+main [label="{Main|+ main(args): void}"];
+console [label="{ConsoleUI|- scanner: Scanner\l- service: FileService\l|+ run(): void\l- readPath(...): Path\l- readKey(): String\l}"];
+gui [label="{PlayfairApp|- inputFile: File\l- keyField: PasswordField\l|+ start(stage): void\l- process(encrypt): void\l}"];
+service [label="{FileService|+ MAX_FILE_SIZE: long\l|+ process(...): long\l- validate(...): void\l- writeNew(...): void\l}"];
+validator [label="{InputValidator|+ isValidMenuChoice(...): boolean\l+ isAcceptableKey(...): boolean\l+ isReadableFile(...): boolean\l+ isWritablePath(...): boolean\l+ areDifferent(...): boolean\l}"];
+cipher [label="{PlayfairCipher|- matrix: byte[][]\l|+ encrypt(input): byte[]\l+ decrypt(input): byte[]\l+ prepare(data): byte[]\l- transform(...): byte[]\l- matrixChecksum(): int\l- checksum(...): int\l}"];
+matrix [label="{MatrixBuilder|+ SIZE: int\l+ TOTAL: int\l|+ build(key): byte[][]\l+ findPosition(...): int[]\l+ requirePosition(...): int[]\l}"];
+application [label="{JavaFX Application}"];
+main->console [style=dashed,label="создаёт"];main->gui [style=dashed,label="запускает"];
+console->service [style=dashed,label="использует"];gui->service [style=dashed,label="использует"];
+gui->application [arrowhead=empty,label="наследует"];
+service->validator [style=dashed];console->validator [style=dashed];service->cipher [style=dashed,label="создаёт"];
+cipher->matrix [style=dashed,label="использует"];
+
+}

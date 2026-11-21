@@ -1,0 +1,15 @@
+digraph G { graph [fontname="DejaVu Sans", bgcolor="white", dpi=180]; node [fontname="DejaVu Sans", fontsize=11, shape=box]; edge [fontname="DejaVu Sans", fontsize=10];
+
+rankdir=TB;
+a [label="Начало",shape=oval]; b [label="Выбор режима, файла, ключа\nи нового пути результата",shape=parallelogram];
+c [label="Ввод корректен?",shape=diamond]; d [label="Сообщение об ошибке\nи повторный запрос"];
+e [label="Чтение файла (до 64 МиБ)"]; f [label="Шифрование?",shape=diamond];
+g [label="Дополнение до чётной длины\nПреобразование биграмм\nЗаголовок PFC2: длина и CRC32"];
+h [label="Проверка заголовка и матрицы\nОбратное преобразование\nВосстановление длины и проверка CRC32"];
+i [label="Создание нового файла\nи запись результата"];
+j [label="Вывод результата и запись журнала"];
+k [label="Возврат в меню",shape=oval];
+a->b->c; c->d [label="Нет"];d->b;c->e [label="Да"];e->f;
+f->g [label="Да"];f->h [label="Нет"];g->i;h->i;i->j->k;
+
+}

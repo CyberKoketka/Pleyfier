@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.playfair.FileServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-21T14:16:27.678Z" hostname="fb59f68eace4" time="0.381">
+  <properties/>
+  <testcase name="preventsSameFile()" classname="ru.playfair.FileServiceTest" time="0.002"/>
+  <testcase name="wrongKeyDoesNotCreateOutput()" classname="ru.playfair.FileServiceTest" time="0.004"/>
+  <testcase name="preventsNormalizedSamePath()" classname="ru.playfair.FileServiceTest" time="0.001"/>
+  <testcase name="fileRoundTrip()" classname="ru.playfair.FileServiceTest" time="0.004"/>
+  <testcase name="rejectsBadKey()" classname="ru.playfair.FileServiceTest" time="0.001"/>
+  <testcase name="emptyFileRoundTrip()" classname="ru.playfair.FileServiceTest" time="0.355"/>
+  <testcase name="preventsOverwrite()" classname="ru.playfair.FileServiceTest" time="0.002"/>
+  <testcase name="missingOutputDirectory()" classname="ru.playfair.FileServiceTest" time="0.001"/>
+  <testcase name="missingFile()" classname="ru.playfair.FileServiceTest" time="0.002"/>
+  <testcase name="validatorBoundaries()" classname="ru.playfair.FileServiceTest" time="0.0"/>
+  <system-out><![CDATA[15:16:27 INFO  Шифрование выполнено; сохранено 24 байт
+15:16:27 INFO  Шифрование выполнено; сохранено 26 байт
+15:16:27 INFO  Расшифрование выполнено; сохранено 5 байт
+15:16:27 INFO  Шифрование выполнено; сохранено 20 байт
+15:16:27 INFO  Расшифрование выполнено; сохранено 0 байт
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

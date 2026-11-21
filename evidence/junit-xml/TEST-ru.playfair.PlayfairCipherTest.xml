@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.playfair.PlayfairCipherTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-11-21T14:16:28.067Z" hostname="fb59f68eace4" time="0.405">
+  <properties/>
+  <testcase name="repeatedBytes()" classname="ru.playfair.PlayfairCipherTest" time="0.003"/>
+  <testcase name="wrongKey()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="unicodeText()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="everyBigramIsReversible()" classname="ru.playfair.PlayfairCipherTest" time="0.313"/>
+  <testcase name="emptyFile()" classname="ru.playfair.PlayfairCipherTest" time="0.002"/>
+  <testcase name="trailingZeros()" classname="ru.playfair.PlayfairCipherTest" time="0.0"/>
+  <testcase name="emptyKeyRejected()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="inputNotModified()" classname="ru.playfair.PlayfairCipherTest" time="0.0"/>
+  <testcase name="headerContainsLength()" classname="ru.playfair.PlayfairCipherTest" time="0.0"/>
+  <testcase name="preparePreservesZeros()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="evenLength()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="oddLength()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="invalidSignature()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="nullInputRejected()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="manyLengths()" classname="ru.playfair.PlayfairCipherTest" time="0.067"/>
+  <testcase name="corruptPayload()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="allBytes()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="truncatedContainer()" classname="ru.playfair.PlayfairCipherTest" time="0.001"/>
+  <testcase name="negativeLength()" classname="ru.playfair.PlayfairCipherTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+digraph G { graph [fontname="DejaVu Sans", bgcolor="white", dpi=180]; node [fontname="DejaVu Sans", fontsize=11, shape=box]; edge [fontname="DejaVu Sans", fontsize=10];
+
+rankdir=LR; node [shape=ellipse];
+user [shape=none,label="",image="actor.png",imagescale=true,width=1,height=1.3];
+subgraph cluster_app {
+ label="PlayfairCipher";
+ choose [label="Выбрать исходный файл"];
+ key [label="Ввести ключ"];
+ enc [label="Зашифровать файл"];
+ dec [label="Расшифровать файл"];
+ save [label="Сохранить новый файл"];
+ check [label="Проверить параметры"];
+ errors [label="Получить сообщение\nоб ошибке"];
+ quit [label="Завершить работу"];
+}
+user->choose [dir=none];user->key [dir=none];user->enc [dir=none];user->dec [dir=none];user->quit [dir=none];
+enc->check [style=dashed,label="«include»"];
+dec->check [style=dashed,label="«include»"];
+enc->save [style=dashed,label="«include»"];
+dec->save [style=dashed,label="«include»"];
+errors->check [style=dashed,label="«extend»"];
+
+}

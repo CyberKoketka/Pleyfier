@@ -1,0 +1,14 @@
+ru.playfair.ConsoleUITest: 5 tests, 0 failures, 0 errors
+ru.playfair.FileServiceTest: 10 tests, 0 failures, 0 errors
+ru.playfair.MatrixBuilderTest: 3 tests, 0 failures, 0 errors
+ru.playfair.PlayfairCipherTest: 19 tests, 0 failures, 0 errors
+
+TOTAL: 37 tests, 0 failures, 0 errors
+
+odd.bin: 5 bytes
+odd.restored: 5 bytes
+SHA256 original: e429d4302b8d1d228b9369cb66b8b219e79a5a2e4896ad582cf15c5a36c76035
+SHA256 restored: e429d4302b8d1d228b9369cb66b8b219e79a5a2e4896ad582cf15c5a36c76035
+BINARY COMPARISON: IDENTICAL
+
+GUI encrypted file: 26 bytes

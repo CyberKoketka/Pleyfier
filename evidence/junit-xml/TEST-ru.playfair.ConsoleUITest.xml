@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.playfair.ConsoleUITest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-21T14:16:27.284Z" hostname="fb59f68eace4" time="0.389">
+  <properties/>
+  <testcase name="invalidMenuAndCancel()" classname="ru.playfair.ConsoleUITest" time="0.353"/>
+  <testcase name="eofInsideOperationTerminates()" classname="ru.playfair.ConsoleUITest" time="0.009"/>
+  <testcase name="eofTerminates()" classname="ru.playfair.ConsoleUITest" time="0.004"/>
+  <testcase name="actualConsoleEncryption()" classname="ru.playfair.ConsoleUITest" time="0.014"/>
+  <testcase name="invalidPathDoesNotCrash()" classname="ru.playfair.ConsoleUITest" time="0.002"/>
+  <system-out><![CDATA[15:16:27 WARN  Ошибка ввода или обработки: Допустимо только 1, 2 или 3
+15:16:27 WARN  Ошибка ввода или обработки: Ключ должен быть не короче 3 символов
+15:16:27 WARN  Ошибка ввода или обработки: Путь совпадает с исходным файлом
+15:16:27 INFO  Шифрование выполнено; сохранено 24 байт
+15:16:27 WARN  Ошибка ввода или обработки: Nul character not allowed: invalid?path
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
