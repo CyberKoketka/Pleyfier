@@ -1,0 +1,21 @@
+Происхождение исходников
+Исходная база: А. А. Кокорин, https://github.com/CyberKoketka/Pleyfier
+Полученный commit: e2d6619f6197186b53b15025b2c4aa89e94e4a62.
+MatrixBuilder основан на исходном коде с дополнением документации. Остальные классы переработаны для исправления формата и ввода; добавлены FileService, JavaFX-интерфейс, тесты и документация.
+Использована версия GUI и конфигурация Log4j из приложенного первоначального отчёта как основа функциональных требований.
+
+Внешние компоненты
+Apache Log4j API/Core 2.23.1 — Apache Software Foundation, Apache License 2.0.
+JUnit Platform Console Standalone 1.10.2 (JUnit Jupiter 5.10.2) — команда JUnit, EPL 2.0; дополнительные уведомления включены в JAR.
+OpenJFX 17.0.10 — OpenJFX contributors, GPL v2 with Classpath Exception и уведомления компонентов.
+Gradle Wrapper 8.14.3 — Gradle Inc., Apache License 2.0. Дистрибутив Gradle скачивается отдельно Wrapper.
+Библиотеки включены без изменения. Лицензии/уведомления из JAR сохранены в каталоге licenses.
+
+Документация
+https://docs.oracle.com/en/java/javase/17/docs/api/
+https://docs.oracle.com/en/java/javase/17/docs/specs/man/javadoc.html
+https://logging.apache.org/log4j/2.x/manual/appenders.html
+https://openjfx.io/openjfx-docs/
+https://docs.junit.org/5.10.2/user-guide/
+https://docs.gradle.org/8.14.3/userguide/java_plugin.html
+Схемы и пояснения в обновлённом отчёте подготовлены для этой версии проекта. Изображения работы программы получены при её проверке; журналы представлены в evidence.
