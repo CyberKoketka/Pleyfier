@@ -17,6 +17,7 @@
 
 ## Сборка
 ./gradlew clean build
+
 Из каталога project:
   macOS/Linux: ./gradlew clean test jar javadoc
   Windows: gradlew.bat clean test jar javadoc
