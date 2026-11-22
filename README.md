@@ -16,13 +16,13 @@
 В консоли слово «отмена» возвращает в меню. Команда 3 завершает работу. В GUI сначала выберите файл, введите ключ и нажмите нужную кнопку, затем укажите новый путь результата.
 
 ## Сборка
--./gradlew clean build
--Из каталога project:
---  macOS/Linux: ./gradlew clean test jar javadoc
--- Windows: gradlew.bat clean test jar javadoc
--Проверено на JDK 17.0.17 и Gradle 8.14.3. При первом вызове Wrapper скачает Gradle; библиотеки уже включены в project/libs. Для повторной сборки без сети после загрузки Gradle добавьте --offline.
--Результат сборки: project/build/libs/PlayfairCipher.jar.
--Для обновления готовой программы в корне, пожалуйста, скопируйте туда новый JAR после сборки.
+./gradlew clean build
+Из каталога project:
+  macOS/Linux: ./gradlew clean test jar javadoc
+  Windows: gradlew.bat clean test jar javadoc
+Проверено на JDK 17.0.17 и Gradle 8.14.3. При первом вызове Wrapper скачает Gradle; библиотеки уже включены в project/libs. Для повторной сборки без сети после загрузки Gradle добавьте --offline.
+Результат сборки: project/build/libs/PlayfairCipher.jar.
+Для обновления готовой программы в корне, пожалуйста, скопируйте туда новый JAR после сборки.
 
 ## Запуск
 ./gradlew run [ИЛИ] java -jar build/libs/PlayfairCipher-Kokorin.jar
