@@ -5,4 +5,4 @@ case "$(uname -s)" in
   Linux) platform=linux ;;
   *) echo "Используйте run-gui.bat для Windows"; exit 1 ;;
 esac
-java --module-path "project/libs/javafx/$platform" --add-modules javafx.controls -jar PlayfairCipher.jar --gui
+java --module-path "libs/javafx/$platform" --add-modules javafx.controls -jar PlayfairCipher.jar --gui
