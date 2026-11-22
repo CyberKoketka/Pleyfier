@@ -28,9 +28,9 @@
 
 Из каталога project:
   
-  macOS/Linux: ./gradlew clean test jar javadoc
+ -- macOS/Linux: ./gradlew clean test jar javadoc
   
-  Windows: gradlew.bat clean test jar javadoc
+ -- Windows: gradlew.bat clean test jar javadoc
 
 Проверено на JDK 17.0.17 и Gradle 8.14.3. При первом вызове Wrapper скачает Gradle; библиотеки уже включены в project/libs. Для повторной сборки без сети после загрузки Gradle добавьте --offline.
 
@@ -47,9 +47,9 @@ Windows: run-console.bat или run-gui.bat.
 
 macOS: run-console.command или run-gui.command. Если нет права запуска:
   
-  chmod +x run-console.command run-gui.command
+--  chmod +x run-console.command run-gui.command
   
-  ./run-gui.command
+--  ./run-gui.command
 
 Linux x64: sh run-gui.command
 
