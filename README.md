@@ -55,6 +55,13 @@ Linux x64: sh run-gui.command
 
 В графическом режиме Java должна соответствовать архитектуре ОС.
 
+Если вы уже в директории с проектом, то команды для терминала:
+-- run-gui.bat
+-- java -Dfile.encoding=UTF-8 --module-path "project\libs\javafx\win" --add-modules javafx.controls -jar PlayfairCipher.jar --gui
+
+-- run-console.bat
+-- java -Dfile.encoding=UTF-8 --module-path "project\libs\javafx\win" --add-modules javafx.controls -jar PlayfairCipher.jar
+
 ## Функции
 - Шифрование / расшифрование файлов любого типа
 - Многоуровневая защита от некорректного ввода
