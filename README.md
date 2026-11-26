@@ -39,7 +39,7 @@
 Для обновления готовой программы в корне, пожалуйста, скопируйте туда новый JAR после сборки.
 
 ## Запуск
-./gradlew run [ИЛИ] java -jar build/libs/PlayfairCipher-Kokorin.jar
+./gradlew run [ИЛИ] java -jar build/libs/PlayfairCipher.jar
 
 Консоль: java -jar PlayfairCipher.jar
 
